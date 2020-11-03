@@ -18,8 +18,16 @@ cd CSIOR
 - Install [Fast Marching Toolbox](https://www.mathworks.com/matlabcentral/fileexchange/6110-toolbox-fast-marching) (this dependency is required to solve some critical cases)
 
 
+### Test script
+To test the algorithm on a mesh run the following command 
+```matlab
+test_CSIOR
+```
+The script will resample the mesh saved in `towel1_2_a_s10000a.off`  and generate some illustrative figures.
+
+
 ### Run
-- To resample a mesh manifold:
+To resample a mesh manifold run:
 ```matlab
 [ vertex, face, rings ] = CSIOR ( original_vertex, original_face )
 ```
